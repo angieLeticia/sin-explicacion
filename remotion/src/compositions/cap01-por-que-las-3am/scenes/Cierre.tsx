@@ -1,11 +1,12 @@
 import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 import { theme } from '../../../theme';
 
-const STAMP_START = 1350; // relativo al inicio de la escena (~L52, "queda clasificado...")
+const STAMP_START = 1665; // relativo al inicio de la escena (~L52, "queda clasificado...")
 
 /**
- * L47–L53 (10:13–11:07). Sello de clasificación entrando sobre el final,
- * coincidiendo con L52 ("este caso queda clasificado, oficialmente...").
+ * L47–L53. Sello de clasificación entrando sobre el final, coincidiendo con
+ * L52 ("este caso queda clasificado, oficialmente..."). Frame calculado
+ * contra el audio real de narración.
  */
 export const Cierre: React.FC<{ durationInFrames: number }> = ({ durationInFrames }) => {
   const frame = useCurrentFrame();

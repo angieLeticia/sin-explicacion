@@ -2,16 +2,17 @@ import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 import { theme } from '../../../theme';
 
 /**
- * L09–L39 (00:58–08:33). El B-roll y los subtítulos son layers globales
+ * L09–L39. El B-roll y los subtítulos son layers globales
  * (BRollSequence/SubtitleLayer en Composition.tsx) — esta escena solo agrega
  * el "kicker" de qué hilo de investigación está activo, como un rótulo de
  * documento clasificado, sin tapar el B-roll.
+ * Frames calculados contra el audio real de narración (ver data/subtitles.ts).
  */
 const HILOS = [
-  { label: 'Hilo 1 — La vigilia monástica', from: 2670 - 1980, to: 7260 - 1980 },
-  { label: 'Hilo 2 — Demonología moderna y cine', from: 7260 - 1980, to: 9510 - 1980 },
-  { label: 'Hilo 3 — El cuerpo', from: 9510 - 1980, to: 13380 - 1980 },
-  { label: 'Hilo 4 — Una hora que no es universal', from: 13380 - 1980, to: 15390 - 1980 },
+  { label: 'Hilo 1 — La vigilia monástica', from: 973, to: 6567 },
+  { label: 'Hilo 2 — Demonología moderna y cine', from: 6576, to: 9305 },
+  { label: 'Hilo 3 — El cuerpo', from: 9314, to: 13989 },
+  { label: 'Hilo 4 — Una hora que no es universal', from: 13998, to: 16369 },
 ];
 
 const FADE_FRAMES = 15;
