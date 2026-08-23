@@ -1,0 +1,22 @@
+{
+  "name": "sin-explicacion-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Composiciones Remotion del canal Sin Explicación — un episodio por carpeta bajo src/compositions/.",
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts",
+    "still": "remotion still src/index.ts"
+  },
+  "dependencies": {
+    "@remotion/google-fonts": "^4.0.190",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.190"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.190",
+    "@types/react": "^18.3.3",
+    "typescript": "^5.5.4"
+  }
+}

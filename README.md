@@ -31,3 +31,11 @@ python3 scripts/organizar_export.py ~/Descargas/video_final.mp4 --proyecto recet
 ```
 
 Esto deja el archivo en `content/videos/receta-facil/exports/tiktok/receta-facil.mp4`.
+
+## Edición (Remotion)
+
+`remotion/` tiene el proyecto de edición en código (React/TypeScript) del canal — un episodio por carpeta bajo `remotion/src/compositions/<episodio>/`, con tipografía y look (grano, colores) compartidos entre capítulos. Ver `remotion/README.md` para cómo correrlo.
+
+## Post-producción
+
+`POST-PRODUCCION.md` es el checklist estándar del canal (loudness, subtítulos, grano) — se corre igual en todos los episodios.
